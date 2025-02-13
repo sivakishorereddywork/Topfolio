@@ -1,0 +1,22 @@
+/* Custom Scrollbar - Always Visible */
+.custom-scrollbar {
+    overflow-x: scroll !important;
+    scrollbar-width: thin; /* Ensures scrollbar is always visible (Firefox) */
+    -ms-overflow-style: scrollbar; /* Ensures scrollbar in Edge */
+  }
+  
+  /* Webkit Browsers (Chrome, Safari, Edge) */
+  .custom-scrollbar::-webkit-scrollbar {
+    height: 8px; /* Scrollbar thickness */
+    background: #e0e0e0; /* Scrollbar track */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar color */
+    border-radius: 4px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
